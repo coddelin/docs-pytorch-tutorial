@@ -1,0 +1,159 @@
+#
+msgid ""
+msgstr ""
+
+#: ../../<rst_epilog>:2
+msgid "See All Recipes"
+msgstr "查看所有食谱"
+
+#: ../../<rst_epilog>:2
+msgid "See All Prototype Recipes"
+msgstr "查看所有原型食谱"
+
+#: ../../<rst_epilog>:2
+msgid "PyTorch Recipes"
+msgstr "PyTorch 食谱"
+
+#: ../../<rst_epilog>:2
+msgid "Introduction to PyTorch"
+msgstr "PyTorch 入门"
+
+#: ../../<rst_epilog>:2
+msgid "Learning PyTorch"
+msgstr "学习 PyTorch"
+
+#: ../../<rst_epilog>:2
+msgid "Image and Video"
+msgstr "图像和视频"
+
+#: ../../<rst_epilog>:2
+msgid "Audio"
+msgstr "音频"
+
+#: ../../<rst_epilog>:2
+msgid "Backends"
+msgstr "后端"
+
+#: ../../<rst_epilog>:2
+msgid "Reinforcement Learning"
+msgstr "强化学习"
+
+#: ../../<rst_epilog>:2
+msgid "Deploying PyTorch Models in Production"
+msgstr "生产中部署 PyTorch 模型"
+
+#: ../../<rst_epilog>:2
+msgid "Profiling PyTorch"
+msgstr "PyTorch 性能分析"
+
+#: ../../<rst_epilog>:2
+msgid "Code Transforms with FX"
+msgstr "使用 FX 进行代码转换"
+
+#: ../../<rst_epilog>:2
+msgid "Frontend APIs"
+msgstr "前端 API"
+
+#: ../../<rst_epilog>:2
+msgid "Extending PyTorch"
+msgstr "扩展 PyTorch"
+
+#: ../../<rst_epilog>:2
+msgid "Model Optimization"
+msgstr "模型优化"
+
+#: ../../<rst_epilog>:2
+msgid "Parallel and Distributed Training"
+msgstr "并行和分布式训练"
+
+#: ../../<rst_epilog>:2
+msgid "Exporting to ExecuTorch Tutorial"
+msgstr "导出到 ExecuTorch 教程"
+
+#: ../../<rst_epilog>:2
+msgid "Running an ExecuTorch Model in C++ Tutorial"
+msgstr "在 C++ 中运行 ExecuTorch 模型教程"
+
+#: ../../<rst_epilog>:2
+msgid "Using the ExecuTorch SDK to Profile a Model"
+msgstr "使用 ExecuTorch SDK 分析模型"
+
+#: ../../<rst_epilog>:2
+msgid "Building an ExecuTorch iOS Demo App"
+msgstr "构建一个 ExecuTorch iOS 演示应用"
+
+#: ../../<rst_epilog>:2
+msgid "Building an ExecuTorch Android Demo App"
+msgstr "构建一个 ExecuTorch Android 演示应用"
+
+#: ../../<rst_epilog>:2
+msgid "Lowering a Model as a Delegate"
+msgstr "将模型降级为委托"
+
+#: ../../<rst_epilog>:2
+msgid "Edge with ExecuTorch"
+msgstr "ExecuTorch 边缘计算"
+
+#: ../../<rst_epilog>:2
+msgid "Recommendation Systems"
+msgstr "推荐系统"
+
+#: ../../<rst_epilog>:2
+msgid "Multimodality"
+msgstr "多模态"
+
+#: ../../<rst_epilog>:2
+msgid "Welcome to PyTorch Tutorials"
+msgstr "欢迎来到 PyTorch 教程"
+
+#: ../../<rst_epilog>:2
+msgid "**What's new in PyTorch tutorials?**"
+msgstr "**PyTorch 教程中的新增内容**"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"`Utilizing Torch Function modes with torch.compile "
+"<https://pytorch.org/tutorials/recipes/torch_compile_torch_function_modes.html>`__"
+msgstr ""
+"`利用 torch.compile 的 Torch Function 模式 "
+"<https://pytorch.org/tutorials/recipes/torch_compile_torch_function_modes.html>`__"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"`Context Parallel Tutorial "
+"<https://pytorch.org/tutorials/prototype/context_parallel.html>`__"
+msgstr ""
+"`Context Parallel 教程 "
+"<https://pytorch.org/tutorials/prototype/context_parallel.html>`__"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"`PyTorch 2 Export Quantization with Intel GPU Backend through Inductor "
+"<https://pytorch.org/tutorials/prototype/pt2e_quant_xpu_inductor.html>`__"
+msgstr ""
+"`通过 Inductor 使用 Intel GPU 后端导出 PyTorch 2 量化模型 "
+"<https://pytorch.org/tutorials/prototype/pt2e_quant_xpu_inductor.html>`__"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"`(beta) Explicit horizontal fusion with foreach_map and torch.compile "
+"<https://pytorch.org/tutorials/recipes/foreach_map.html>`__"
+msgstr ""
+"`(beta) 使用 foreach_map 和 torch.compile 进行显式水平融合 "
+"<https://pytorch.org/tutorials/recipes/foreach_map.html>`__"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Updated `Inductor Windows CPU Tutorial "
+"<https://pytorch.org/tutorials/prototype/inductor_windows.html>`__"
+msgstr ""
+"更新的 `Inductor Windows CPU 教程 "
+"<https://pytorch.org/tutorials/prototype/inductor_windows.html>`__"
+
+#: ../../<rst_epilog>:2
+msgid "Additional Resources"
+msgstr "其他资源"
+
+#: ../../<rst_epilog>:2
+msgid "edit"
+msgstr "编辑"

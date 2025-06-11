@@ -34,7 +34,7 @@ ax-platform>=0.4.0
 nbformat>=5.9.2
 datasets
 transformers
-torchmultimodal-nightly # needs to be updated to stable as soon as it's avaialable
+# torchmultimodal-nightly # needs to be updated to stable as soon as it's avaialable
 onnx
 onnxscript>=0.2.2
 onnxruntime
@@ -44,7 +44,8 @@ accelerate>=0.20.1
 importlib-metadata==6.8.0
 
 # PyTorch Theme
--e git+https://github.com/pytorch/pytorch_sphinx_theme.git#egg=pytorch_sphinx_theme
+# -e git+https://github.com/pytorch/pytorch_sphinx_theme.git#egg=pytorch_sphinx_theme
+-e ../pytorch_sphinx_theme
 
 ipython
 

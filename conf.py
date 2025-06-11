@@ -107,9 +107,9 @@ rst_epilog ="""
 # needs_sphinx = '1.0'
 
 html_meta = {
-    'description': 'Master PyTorch with our step-by-step tutorials for all skill levels. Start your journey to becoming a PyTorch expert today!',
-    'keywords': 'PyTorch, tutorials, Getting Started, deep learning, AI',
-    'author': 'PyTorch Contributors'
+    'description': '通过我们适合所有技能水平的分步教程掌握 PyTorch。立即开启您的 PyTorch 专家之旅！',
+    'keywords': 'PyTorch, 教程, 入门指南, 深度学习, AI',
+    'author': 'PyTorch 贡献者'
 }
 
 # Add any Sphinx extension module names here, as strings. They can be
@@ -193,9 +193,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'PyTorch Tutorials'
-copyright = '2024, PyTorch'
-author = 'PyTorch contributors'
+project = 'PyTorch 教程'
+copyright = '2025-由林建有翻译支持。'
+author = 'PyTorch 贡献者'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -211,7 +211,11 @@ release = str(torch.__version__)
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'en'
+# language = 'en'
+language = 'zh_CN'
+locale_dirs = ['locales/']  # 存放 po/mo 文件的目录
+#这样生成的 .pot 文件是按照文件路径分散的，更方便你精确删除或排除某些文件对应的 .pot 文件。
+# gettext_compact = False
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -219,6 +223,7 @@ language = 'en'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'src/pytorch-sphinx-theme/docs*']
 exclude_patterns += sphinx_gallery_conf['examples_dirs']
 exclude_patterns += ['*/index.rst']
+exclude_patterns += ['venv',".venv"]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -261,13 +266,14 @@ html_static_path = ['_static']
 html_theme = 'pytorch_sphinx_theme'
 html_theme_path = [pytorch_sphinx_theme.get_html_theme_path()]
 html_logo = '_static/img/pytorch-logo-dark.svg'
+html_favicon = '_static/favicon.ico'
 html_theme_options = {
     'pytorch_project': 'tutorials',
     'collapse_navigation': False,
     'display_version': True,
     'navigation_with_keys': True,
     'logo_only': False,
-    'analytics_id': 'GTM-T8XT4PS',
+    'analytics_id': 'GTM-TGTH5JGQ',
 }
 
 

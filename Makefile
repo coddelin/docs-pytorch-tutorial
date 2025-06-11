@@ -99,7 +99,7 @@ docs:
 	cp -r $(BUILDDIR)/html docs
 	touch docs/.nojekyll
 	rm -rf tutorials-review-data.json
-
+#英文版html，不绘图
 html-noplot:
 	$(SPHINXBUILD) -D plot_gallery=0 -b html $(SPHINXOPTS) "$(SOURCEDIR)" "$(BUILDDIR)/html"
 	# bash .jenkins/remove_invisible_code_block_batch.sh "$(BUILDDIR)/html"
@@ -109,9 +109,45 @@ html-noplot:
 	@echo "Running post-processing script to insert 'Last Verified' dates..."
 	@python .jenkins/insert_last_verified.py $(BUILDDIR)/html
 	rm -rf tutorials-review-data.json
+#构建中文的html，不绘图
+html-noplot-zh:
+	mkdir -p "$(BUILDDIR)/html_zh_CN"
+	$(SPHINXBUILD) -D plot_gallery=0 -b html -D language=zh_CN "$(SOURCEDIR)"  "$(BUILDDIR)/html_zh_CN"
+	# bash .jenkins/remove_invisible_code_block_batch.sh  "$(BUILDDIR)/html"
+	@echo
+	make download-last-reviewed-json
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html_zh_CN."
+	@echo "Running post-processing script to insert 'Last Verified' dates..."
+	@python .jenkins/insert_last_verified.py $(BUILDDIR)/html_zh_CN
+	rm -rf tutorials-review-data.json
 
 clean-cache:
 	make clean
 	rm -rf advanced beginner intermediate recipes
 	# remove additional python files downloaded for torchvision_tutorial.py
 	rm -rf intermediate_source/engine.py intermediate_source/utils.py intermediate_source/transforms.py intermediate_source/coco_eval.py intermediate_source/coco_utils.py
+#获取rst的文案，提供给翻译
+gettext-noplot:
+	$(SPHINXBUILD) -D plot_gallery=0 -b gettext $(SPHINXOPTS) "$(SOURCEDIR)" "$(BUILDDIR)/gettext"
+	@echo "Build finished. gettext are in $(BUILDDIR)/gettext."
+#生成i18n目录，并拷贝获取到的文案
+gettext-zh:
+	sphinx-intl update -p "$(BUILDDIR)/gettext" -l zh_CN
+#使用大模型翻译
+trans-pot:
+	@llm-translate \
+		-src "$(BUILDDIR)/gettext" \
+		-dist "locales/zh_CN/LC_MESSAGES" \
+		-m chatgpt \
+		-f "**/*.pot" -r  \
+		-t "rst" \
+		-p 翻译下json的values文案成中文，直接返回翻译后的json，不要输出markdown，要纯json文本格式输出 \
+		-force
+trans-build:
+# 这会生成 .mo 文件（供 Sphinx 使用）：
+# locales/
+# └── zh_CN/
+#     └── LC_MESSAGES/
+#         ├── index.mo
+#         └── usage.mo
+	sphinx-intl build

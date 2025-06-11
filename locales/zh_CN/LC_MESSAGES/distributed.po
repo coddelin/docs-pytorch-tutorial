@@ -1,0 +1,238 @@
+#
+msgid ""
+msgstr ""
+
+#: ../../<rst_epilog>:2
+msgid "Distributed and Parallel Training Tutorials"
+msgstr "分布式和并行训练教程"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Distributed training is a model training paradigm that involves spreading "
+"training workload across multiple worker nodes, therefore significantly "
+"improving the speed of training and model accuracy. While distributed "
+"training can be used for any type of ML model training, it is most "
+"beneficial to use it for large models and compute demanding tasks as deep "
+"learning."
+msgstr ""
+"分布式训练是一种模型训练模式，通过将训练工作负载分散到多个工作节点上，从而显著提高训练速度和模型精度。虽然分布式训练可以用于任何类型的机器学习模型训练，但对于大模型和计算密集型任务（如深度学习）最为有效。"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"There are a few ways you can perform distributed training in PyTorch with "
+"each method having their advantages in certain use cases:"
+msgstr "在 PyTorch 中有几种方法可以进行分布式训练，每种方法在特定使用场景都有其优势："
+
+#: ../../<rst_epilog>:2
+msgid "`DistributedDataParallel (DDP) <#learn-ddp>`__"
+msgstr "`分布式数据并行 (DDP) <#learn-ddp>`__"
+
+#: ../../<rst_epilog>:2
+msgid "`Fully Sharded Data Parallel (FSDP) <#learn-fsdp>`__"
+msgstr "`完全分片数据并行 (FSDP) <#learn-fsdp>`__"
+
+#: ../../<rst_epilog>:2
+msgid "`Tensor Parallel (TP) <#learn-tp>`__"
+msgstr "`张量并行 (TP) <#learn-tp>`__"
+
+#: ../../<rst_epilog>:2
+msgid "`Device Mesh <#device-mesh>`__"
+msgstr "`设备网格 (Device Mesh) <#device-mesh>`__"
+
+#: ../../<rst_epilog>:2
+msgid "`Remote Procedure Call (RPC) distributed training <#learn-rpc>`__"
+msgstr "`远程过程调用 (RPC) 分布式训练 <#learn-rpc>`__"
+
+#: ../../<rst_epilog>:2
+msgid "`Custom Extensions <#custom-extensions>`__"
+msgstr "`自定义扩展 <#custom-extensions>`__"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Read more about these options in `Distributed Overview "
+"<../beginner/dist_overview.html>`__."
+msgstr "在 `分布式概览 <../beginner/dist_overview.html>`__ 中了解更多关于这些选项的内容。"
+
+#: ../../<rst_epilog>:2
+msgid "Learn DDP"
+msgstr "学习 DDP"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"DDP Intro Video Tutorials"
+msgstr ""
+"入门视频教程"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"A step-by-step video series on how to get started with "
+"`DistributedDataParallel` and advance to more complex topics"
+msgstr "逐步视频系列，教你如何从 `分布式数据并行 (DistributedDataParallel)` 入门并深入到更复杂的主题"
+
+#: ../../<rst_epilog>:2
+msgid ""
+":octicon:`code;1em` Code :octicon:`square-fill;1em` :octicon:`video;1em` "
+"Video"
+msgstr ""
+":octicon:`code;1em` 代码 :octicon:`square-fill;1em` :octicon:`video;1em` 视频"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Getting Started with Distributed Data Parallel"
+msgstr ""
+"了解分布式数据并行入门"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"This tutorial provides a short and gentle intro to the PyTorch "
+"DistributedData Parallel."
+msgstr "本教程为 PyTorch 分布式数据并行 (DistributedDataParallel) 提供简短且易懂的入门介绍。"
+
+#: ../../<rst_epilog>:2
+msgid ":octicon:`code;1em` Code"
+msgstr ":octicon:`code;1em` 代码"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Distributed Training with Uneven Inputs Using the Join Context Manager"
+msgstr ""
+"使用 Join 上下文管理器处理输入不均的分布式训练"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"This tutorial describes the Join context manager and demonstrates it's use "
+"with DistributedData Parallel."
+msgstr "本教程描述了 Join 上下文管理器的功能并展示了其在分布式数据并行中的应用。"
+
+#: ../../<rst_epilog>:2
+msgid "Learn FSDP"
+msgstr "学习 FSDP"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Getting Started with FSDP"
+msgstr ""
+"FSDP 入门"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"This tutorial demonstrates how you can perform distributed training with "
+"FSDP on a MNIST dataset."
+msgstr "本教程展示了如何在 MNIST 数据集上使用 FSDP 进行分布式训练。"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"FSDP Advanced"
+msgstr ""
+"FSDP 高级教程"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"In this tutorial, you will learn how to fine-tune a HuggingFace (HF) T5 "
+"model with FSDP for text summarization."
+msgstr "在本教程中，你将学习如何使用 FSDP 微调一个用于文本摘要的 HuggingFace (HF) T5 模型。"
+
+#: ../../<rst_epilog>:2
+msgid "Learn Tensor Parallel (TP)"
+msgstr "学习张量并行 (TP)"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Large Scale Transformer model training with Tensor Parallel (TP)"
+msgstr ""
+"使用张量并行 (TP) 进行大规模 Transformer 模型训练"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"This tutorial demonstrates how to train a large Transformer-like model "
+"across hundreds to thousands of GPUs using Tensor Parallel and Fully Sharded"
+" Data Parallel."
+msgstr "本教程展示了如何在数百到数千个 GPU 上使用张量并行和完全分片数据并行 (FSDP) 训练一个大型类似 Transformer 的模型。"
+
+#: ../../<rst_epilog>:2
+msgid "Learn DeviceMesh"
+msgstr "学习设备网格 (DeviceMesh)"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Getting Started with DeviceMesh"
+msgstr ""
+"设备网格 (DeviceMesh) 入门"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"In this tutorial you will learn about `DeviceMesh` and how it can help with "
+"distributed training."
+msgstr "在本教程中，你将学习关于 `设备网格 (DeviceMesh)` 的知识以及它如何帮助进行分布式训练。"
+
+#: ../../<rst_epilog>:2
+msgid "Learn RPC"
+msgstr "学习 RPC"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Getting Started with Distributed RPC Framework"
+msgstr ""
+"分布式 RPC 框架入门"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"This tutorial demonstrates how to get started with RPC-based distributed "
+"training."
+msgstr "本教程演示了如何使用基于 RPC 的分布式训练入门。"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Implementing a Parameter Server Using Distributed RPC Framework"
+msgstr ""
+"使用分布式 RPC 框架实现参数服务器"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"This tutorial walks you through a simple example of implementing a parameter"
+" server using PyTorch’s Distributed RPC framework."
+msgstr "本教程通过一个简单的示例介绍了如何使用 PyTorch 的分布式 RPC 框架实现一个参数服务器。"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Implementing Batch RPC Processing Using Asynchronous Executions"
+msgstr ""
+"使用异步执行实现批量 RPC 处理"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"In this tutorial you will build batch-processing RPC applications with the "
+"@rpc.functions.async_execution decorator."
+msgstr "在本教程中，您将通过 @rpc.functions.async_execution 装饰器构建批量处理 RPC 应用程序。"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Combining Distributed DataParallel with Distributed RPC Framework"
+msgstr ""
+"将分布式数据并行与分布式 RPC 框架相结合"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"In this tutorial you will learn how to combine distributed data parallelism "
+"with distributed model parallelism."
+msgstr "在本教程中，您将学习如何将分布式数据并行与分布式模型并行相结合。"
+
+#: ../../<rst_epilog>:2
+msgid "Custom Extensions"
+msgstr "自定义扩展"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"Customize Process Group Backends Using Cpp Extensions"
+msgstr ""
+"使用Cpp 扩展自定义进程组后端"
+
+#: ../../<rst_epilog>:2
+msgid ""
+"In this tutorial you will learn to implement a custom `ProcessGroup` backend"
+" and plug that into PyTorch distributed package using cpp extensions."
+msgstr "在本教程中，您将学习实现一个自定义的 `ProcessGroup` 后端，并将其通过 cpp 扩展集成到 PyTorch 分布式包中。"
+
+#: ../../<rst_epilog>:2
+msgid "edit"
+msgstr "编辑"

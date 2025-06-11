@@ -96,7 +96,7 @@ Welcome to PyTorch Tutorials
 .. customcarditem::
    :header: Good usage of `non_blocking` and `pin_memory()` in PyTorch
    :card_description: A guide on best practices to copy data from CPU to GPU.
-   :image: _static/img/pinmem.png
+   :image: _images/pinmem.png
    :link: intermediate/pinmem_nonblock.html
    :tags: Getting-Started
 
@@ -354,18 +354,21 @@ Welcome to PyTorch Tutorials
 .. customcarditem::
    :header: Profiling PyTorch
    :card_description: Learn how to profile a PyTorch application
+   :image: _static/img/thumbnails/cropped/Custom-Cpp-and-CUDA-Extensions.png
    :link: beginner/profiler.html
    :tags: Profiling
 
 .. customcarditem::
    :header: Profiling PyTorch
    :card_description: Introduction to Holistic Trace Analysis
+   :image: _static/img/thumbnails/cropped/Custom-Cpp-and-CUDA-Extensions.png
    :link: beginner/hta_intro_tutorial.html
    :tags: Profiling
 
 .. customcarditem::
    :header: Profiling PyTorch
    :card_description: Trace Diff using Holistic Trace Analysis
+   :image: _static/img/thumbnails/cropped/Custom-Cpp-and-CUDA-Extensions.png
    :link: beginner/hta_trace_diff_tutorial.html
    :tags: Profiling
 
