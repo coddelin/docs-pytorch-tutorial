@@ -143,7 +143,7 @@ sphinx_gallery_conf = {
     'promote_jupyter_magic': True,
     'backreferences_dir': None,
     'first_notebook_cell': ("# For tips on running notebooks in Google Colab, see\n"
-                            "# https://pytorch.org/tutorials/beginner/colab\n"
+                            "# https://codelin.vip/beginner/colab\n"
                             "%matplotlib inline"),
     'ignore_pattern': r'_torch_export_nightly_tutorial.py',
     'pypandoc': {'extra_args': ['--mathjax', '--toc'],
@@ -151,7 +151,7 @@ sphinx_gallery_conf = {
     },
 }
 
-html_baseurl = 'https://pytorch.org/tutorials/' # needed for sphinx-sitemap
+html_baseurl = 'https://codelin.vip/' # needed for sphinx-sitemap
 sitemap_locales = [None]
 sitemap_excludes = [
     "search.html",
